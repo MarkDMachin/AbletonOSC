@@ -1,1 +1,426 @@
 (2026-05-03 20:11:48,413) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 20:32:13,644) [INFO] Disconnecting...
+(2026-05-03 20:32:22,979) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 20:32:35,072) [INFO] Disconnecting...
+(2026-05-03 20:32:53,370) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 20:33:03,623) [INFO] Disconnecting...
+(2026-05-03 20:36:25,213) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 20:37:39,337) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 20:42:19,266) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 20:42:19,466) [ERROR] AbletonOSC: Error handling OSC message: 'float' object cannot be interpreted as an integer
+(2026-05-03 20:42:19,469) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 108, in song_get_track_names
+    return tuple(self.song.tracks[index].name for index in range(track_index_min, track_index_max))
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+
+(2026-05-03 20:42:21,276) [INFO] Getting track data: ['track.name', 'track.color'] (tracks 0..6)
+(2026-05-03 20:42:21,276) [ERROR] AbletonOSC: Error handling OSC message: Index out of range
+(2026-05-03 20:42:21,277) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 134, in song_get_track_data
+    track = self.song.tracks[track_index]
+            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: Index out of range
+
+(2026-05-03 20:43:14,476) [ERROR] AbletonOSC: Error handling OSC message: 'float' object cannot be interpreted as an integer
+(2026-05-03 20:43:14,478) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 108, in song_get_track_names
+    return tuple(self.song.tracks[index].name for index in range(track_index_min, track_index_max))
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+
+(2026-05-03 20:43:16,076) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 20:43:16,576) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 20:43:16,577) [INFO] Getting property for track: mute = False
+(2026-05-03 20:43:16,676) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 20:43:16,676) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 20:43:16,676) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 20:43:16,676) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:12:41,527) [ERROR] AbletonOSC: Error handling OSC message: 'float' object cannot be interpreted as an integer
+(2026-05-03 21:12:41,531) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 108, in song_get_track_names
+    return tuple(self.song.tracks[index].name for index in range(track_index_min, track_index_max))
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+
+(2026-05-03 21:12:43,126) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:12:43,626) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:12:43,627) [INFO] Getting property for track: mute = False
+(2026-05-03 21:12:43,726) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:12:43,727) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:12:43,727) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:12:43,727) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:13:22,626) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:13:28,557) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:13:28,557) [INFO] Getting property for track: mute = False
+(2026-05-03 21:13:30,106) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:13:30,107) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:13:30,107) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:13:30,108) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:14:15,377) [ERROR] AbletonOSC: Error handling OSC message: 'float' object cannot be interpreted as an integer
+(2026-05-03 21:14:15,379) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 108, in song_get_track_names
+    return tuple(self.song.tracks[index].name for index in range(track_index_min, track_index_max))
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'float' object cannot be interpreted as an integer
+
+(2026-05-03 21:14:16,977) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:14:17,477) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:14:17,478) [INFO] Getting property for track: mute = False
+(2026-05-03 21:14:17,577) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:14:17,578) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:14:17,578) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:14:17,578) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:14:17,777) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:14:17,777) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:14:17,877) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:14:17,977) [INFO] Calling method for clip_slot: create_clip (params (4.0,))
+(2026-05-03 21:14:18,080) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:14:18,081) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:14:18,277) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+(2026-05-03 21:14:18,279) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 164, in clip_remove_notes
+    clip.remove_notes_extended(pitch_start, pitch_span, time_start, time_span)
+Boost.Python.ArgumentError: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+
+(2026-05-03 21:14:18,477) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+(2026-05-03 21:14:18,478) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 164, in clip_remove_notes
+    clip.remove_notes_extended(pitch_start, pitch_span, time_start, time_span)
+Boost.Python.ArgumentError: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+
+(2026-05-03 21:14:18,677) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:14:18,678) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:14:18,877) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:14:47,277) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:14:47,279) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:14:47,377) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:14:47,477) [INFO] Calling method for clip_slot: create_clip (params (4.0,))
+(2026-05-03 21:14:47,486) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:14:47,487) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:14:47,777) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+(2026-05-03 21:14:47,779) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 164, in clip_remove_notes
+    clip.remove_notes_extended(pitch_start, pitch_span, time_start, time_span)
+Boost.Python.ArgumentError: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+
+(2026-05-03 21:14:47,978) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+(2026-05-03 21:14:47,979) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 164, in clip_remove_notes
+    clip.remove_notes_extended(pitch_start, pitch_span, time_start, time_span)
+Boost.Python.ArgumentError: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+
+(2026-05-03 21:14:48,177) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:14:48,179) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:14:48,377) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:15:10,527) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:15:10,528) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:15:10,528) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:15:10,627) [INFO] Getting property for track: name = 2-MIDI
+(2026-05-03 21:15:10,628) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:15:10,628) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:15:10,727) [INFO] Getting property for track: name = 3-Audio
+(2026-05-03 21:15:10,727) [INFO] Getting property for track: has_midi_input = False
+(2026-05-03 21:15:10,728) [INFO] Getting property for track: has_audio_input = True
+(2026-05-03 21:15:10,827) [INFO] Getting property for track: name = 4-Audio
+(2026-05-03 21:15:10,828) [INFO] Getting property for track: has_midi_input = False
+(2026-05-03 21:15:10,828) [INFO] Getting property for track: has_audio_input = True
+(2026-05-03 21:15:10,927) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:15:10,928) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:15:11,027) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:15:11,127) [INFO] Calling method for clip_slot: create_clip (params (4.0,))
+(2026-05-03 21:15:11,727) [INFO] Getting property for clip_slot: has_clip = True
+(2026-05-03 21:15:11,828) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:15:11,829) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:15:12,227) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:15:45,678) [INFO] Calling method for clip_slot: create_clip (params (4.0,))
+(2026-05-03 21:15:46,178) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:15:46,179) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:15:46,578) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+(2026-05-03 21:15:46,579) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 164, in clip_remove_notes
+    clip.remove_notes_extended(pitch_start, pitch_span, time_start, time_span)
+Boost.Python.ArgumentError: Python argument types in
+    Clip.remove_notes_extended(Clip, float, float, float, float)
+did not match C++ signature:
+    remove_notes_extended(TPyHandle<AClip>, int from_pitch, int pitch_span, double from_time, double time_span)
+
+(2026-05-03 21:15:46,778) [ERROR] AbletonOSC: Error handling OSC message: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+(2026-05-03 21:15:46,779) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 59, in clip_callback
+    rv = func(clip, *args, tuple(params[2:]))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/clip.py", line 149, in clip_add_notes
+    note = Live.Clip.MidiNoteSpecification(start_time=start_time,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Boost.Python.ArgumentError: Python argument types in
+    MidiNoteSpecification.__init__(MidiNoteSpecification)
+did not match C++ signature:
+    __init__(_object*, int pitch, double start_time, double duration, float velocity=100.0, bool mute=False, float probability=1.0, float velocity_deviation=0.0, float release_velocity=64.0)
+
+(2026-05-03 21:15:47,178) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:18:06,829) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:18:06,830) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:18:06,929) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:18:07,029) [INFO] Calling method for clip_slot: create_clip (params (4,))
+(2026-05-03 21:18:08,029) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:18:14,929) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:18:15,429) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:18:15,430) [INFO] Getting property for track: mute = False
+(2026-05-03 21:18:15,529) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:18:15,529) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:18:15,530) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:18:15,530) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:18:15,729) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:18:15,729) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:18:15,829) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:18:15,929) [INFO] Calling method for clip_slot: create_clip (params (4,))
+(2026-05-03 21:18:16,929) [INFO] Calling method for clip_slot: delete_clip (params ())
