@@ -424,3 +424,937 @@ did not match C++ signature:
 (2026-05-03 21:18:15,829) [INFO] Getting property for clip_slot: has_clip = False
 (2026-05-03 21:18:15,929) [INFO] Calling method for clip_slot: create_clip (params (4,))
 (2026-05-03 21:18:16,929) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:25:15,883) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:25:15,982) [INFO] Adding listener for song [], property: tempo
+(2026-05-03 21:25:15,982) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:25:15,983) [INFO] Adding listener for song [], property: is_playing
+(2026-05-03 21:25:15,983) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-03 21:25:15,984) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-03 21:25:15,984) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-03 21:25:15,984) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-03 21:25:15,984) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-03 21:25:15,991) [INFO] Adding beat listener
+(2026-05-03 21:25:15,992) [INFO] Adding listener for song [], property: metronome
+(2026-05-03 21:25:15,992) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:25:16,282) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:25:16,284) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:25:16,582) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:25:16,682) [INFO] Setting property for song: metronome (new value True)
+(2026-05-03 21:25:16,684) [INFO] Property metronome changed of song []: (True,)
+(2026-05-03 21:25:16,982) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:25:16,983) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:25:17,082) [INFO] Setting property for song: tempo (new value 120)
+(2026-05-03 21:25:17,083) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:31:23,625) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:31:23,627) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:31:23,627) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:31:23,627) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:31:23,628) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:31:23,735) [INFO] Getting track data: ['track.name', 'track.color', 'track.mute', 'track.solo', 'track.arm', 'track.volume', 'track.panning', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:31:23,735) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object has no attribute 'volume'
+(2026-05-03 21:31:23,737) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 141, in song_get_track_data
+    value = getattr(track, property_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Track' object has no attribute 'volume'
+
+(2026-05-03 21:31:25,145) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:31:25,145) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:31:25,146) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:31:25,146) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:31:25,146) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:31:25,245) [INFO] Getting track data: ['track.name', 'track.color', 'track.mute', 'track.solo', 'track.arm', 'track.volume', 'track.panning', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:31:25,245) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object has no attribute 'volume'
+(2026-05-03 21:31:25,246) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 141, in song_get_track_data
+    value = getattr(track, property_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Track' object has no attribute 'volume'
+
+(2026-05-03 21:31:41,885) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:31:41,886) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:31:41,886) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:31:41,886) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:31:41,886) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:31:41,985) [INFO] Getting track data: ['track.name', 'track.color', 'track.mute', 'track.solo', 'track.arm', 'track.volume', 'track.panning', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:31:41,986) [ERROR] AbletonOSC: Error handling OSC message: 'Track' object has no attribute 'volume'
+(2026-05-03 21:31:41,987) [WARNING] AbletonOSC: Traceback (most recent call last):
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 166, in process
+    self.parse_bundle(data, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 144, in parse_bundle
+    self.process_message(message, remote_addr)
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/osc_server.py", line 90, in process_message
+    rv = callback(message.params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/markmachin/Music/Ableton/User Library/Remote Scripts/AbletonOSC/abletonosc/song.py", line 141, in song_get_track_data
+    value = getattr(track, property_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Track' object has no attribute 'volume'
+
+(2026-05-03 21:32:33,896) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:32:33,897) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:32:33,897) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:32:33,897) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:32:33,897) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:32:33,996) [INFO] Getting track data: ['track.name', 'track.color', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:32:33,997) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:33,997) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:33,998) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:33,998) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:33,998) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:33,998) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:33,998) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:33,999) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:34,196) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,196) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,197) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,197) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,197) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,198) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,198) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:34,198) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,146) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:32:53,147) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:32:53,148) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:32:53,148) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:32:53,148) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:32:53,246) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:32:53,246) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,246) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,247) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,247) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,247) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,247) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,247) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,248) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,456) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,456) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,456) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,456) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,457) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,457) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,457) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,457) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:53,555) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:32:53,556) [INFO] Setting property for track: mute (new value 1)
+(2026-05-03 21:32:53,557) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:32:53,756) [INFO] Getting property for song: tempo = 130.0
+(2026-05-03 21:32:53,756) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:32:53,757) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:32:53,757) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:32:53,757) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:32:53,856) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:32:53,857) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,857) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,858) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,858) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:53,858) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,858) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,858) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:53,859) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:54,066) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,067) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,067) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,067) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,067) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,068) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,068) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,068) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,176) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:32:54,176) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:32:54,177) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:32:54,178) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:32:54,178) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:32:54,275) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:32:54,277) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:32:54,277) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:54,278) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:54,278) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:54,278) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:54,278) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:54,278) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:54,279) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:32:54,280) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:32:54,280) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:54,280) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:54,280) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:54,281) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:54,282) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:54,282) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:54,376) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,377) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,377) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,377) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,377) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,377) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,378) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,378) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:54,675) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:32:54,676) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:32:54,676) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:32:54,676) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:32:54,676) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:32:54,776) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:32:54,776) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:54,777) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:54,778) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:54,975) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,976) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,976) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,977) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,977) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,977) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,977) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:54,977) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,075) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:32:55,076) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:32:55,077) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:32:55,077) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:32:55,078) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:32:55,176) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:32:55,176) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:55,177) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:55,177) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:55,177) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:32:55,177) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:55,178) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:55,178) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:55,178) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:32:55,375) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,376) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,376) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,376) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,377) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,377) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,377) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,377) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:32:55,476) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:32:55,476) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:32:55,476) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:32:55,476) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:32:55,586) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:32:55,586) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:32:55,586) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:55,587) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:55,588) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:32:55,589) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:32:55,590) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:32:55,590) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:32:55,686) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,686) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,686) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,687) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,687) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,687) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,687) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:32:55,687) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:04,466) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:33:04,966) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:33:04,967) [INFO] Getting property for track: mute = False
+(2026-05-03 21:33:05,076) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:33:05,076) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:33:05,076) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:33:05,077) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:33:05,276) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:33:05,276) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:33:05,376) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:33:05,475) [INFO] Calling method for clip_slot: create_clip (params (4,))
+(2026-05-03 21:33:06,496) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:33:06,706) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:33:06,816) [INFO] Removing listener for song [], property tempo
+(2026-05-03 21:33:06,817) [INFO] Adding listener for song [], property: tempo
+(2026-05-03 21:33:06,817) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:33:06,817) [INFO] Removing listener for song [], property is_playing
+(2026-05-03 21:33:06,818) [INFO] Adding listener for song [], property: is_playing
+(2026-05-03 21:33:06,818) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-03 21:33:06,818) [INFO] Removing listener for song [], property current_song_time
+(2026-05-03 21:33:06,818) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-03 21:33:06,818) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-03 21:33:06,819) [INFO] Removing listener for song [], property signature_numerator
+(2026-05-03 21:33:06,819) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-03 21:33:06,819) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-03 21:33:06,819) [INFO] Removing beat listener
+(2026-05-03 21:33:06,820) [INFO] Adding beat listener
+(2026-05-03 21:33:06,820) [INFO] Removing listener for song [], property metronome
+(2026-05-03 21:33:06,820) [INFO] Adding listener for song [], property: metronome
+(2026-05-03 21:33:06,820) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:33:07,025) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:33:07,026) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:33:07,426) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:33:07,526) [INFO] Setting property for song: metronome (new value True)
+(2026-05-03 21:33:07,527) [INFO] Property metronome changed of song []: (True,)
+(2026-05-03 21:33:07,826) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:33:07,827) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:33:07,925) [INFO] Setting property for song: tempo (new value 120)
+(2026-05-03 21:33:07,926) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:33:08,125) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:33:08,126) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:33:08,126) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:33:08,126) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:33:08,126) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:33:08,226) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,227) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,228) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,228) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,426) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,426) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,426) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:08,527) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:33:08,528) [INFO] Setting property for track: mute (new value 1)
+(2026-05-03 21:33:08,528) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:33:08,736) [INFO] Getting property for song: tempo = 130.0
+(2026-05-03 21:33:08,737) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:33:08,737) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:33:08,737) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:33:08,737) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:33:08,836) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:33:08,837) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,837) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,837) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,838) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:08,838) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,838) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,838) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:08,838) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:09,046) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,046) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,047) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,146) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:33:09,147) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:33:09,147) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:33:09,147) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:33:09,148) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:33:09,246) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:33:09,247) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:33:09,247) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:09,247) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:09,247) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:09,248) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:09,248) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:09,248) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:33:09,248) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:33:09,249) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:33:09,250) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:33:09,251) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:09,251) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:09,251) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:09,251) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:09,251) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:09,346) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,346) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,346) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,347) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,347) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,347) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,347) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,347) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:09,556) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:33:09,556) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:33:09,556) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:33:09,556) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:33:09,557) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:33:09,656) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:09,657) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:09,658) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:09,658) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:09,866) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,867) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,867) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,868) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,868) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,868) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,869) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,869) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:09,967) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:33:09,967) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:33:09,967) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:33:09,967) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:33:09,968) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:33:10,066) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:33:10,067) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:10,068) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:10,068) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:10,068) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:33:10,069) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:10,069) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:10,069) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:10,069) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:33:10,266) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,267) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,267) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,267) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,267) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,268) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,268) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,268) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:33:10,366) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:33:10,366) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:33:10,367) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:33:10,367) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:33:10,466) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:10,467) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:10,468) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:33:10,468) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:33:10,468) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:10,468) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:10,468) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:33:10,469) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:33:10,470) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:33:10,470) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:33:10,470) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:33:10,470) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:33:10,566) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,567) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,567) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,567) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,567) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,568) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,568) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:33:10,568) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:18,202) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:40:18,701) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:40:18,702) [INFO] Getting property for track: mute = False
+(2026-05-03 21:40:18,801) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:40:18,802) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:40:18,802) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:40:18,802) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:40:19,001) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:40:19,002) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:40:19,102) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:40:19,202) [INFO] Calling method for clip_slot: create_clip (params (4,))
+(2026-05-03 21:40:20,202) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:40:20,402) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:40:20,502) [INFO] Removing listener for song [], property tempo
+(2026-05-03 21:40:20,502) [INFO] Adding listener for song [], property: tempo
+(2026-05-03 21:40:20,502) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:40:20,502) [INFO] Removing listener for song [], property is_playing
+(2026-05-03 21:40:20,502) [INFO] Adding listener for song [], property: is_playing
+(2026-05-03 21:40:20,503) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-03 21:40:20,503) [INFO] Removing listener for song [], property current_song_time
+(2026-05-03 21:40:20,503) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-03 21:40:20,503) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-03 21:40:20,503) [INFO] Removing listener for song [], property signature_numerator
+(2026-05-03 21:40:20,503) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-03 21:40:20,503) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-03 21:40:20,504) [INFO] Removing beat listener
+(2026-05-03 21:40:20,504) [INFO] Adding beat listener
+(2026-05-03 21:40:20,504) [INFO] Removing listener for song [], property metronome
+(2026-05-03 21:40:20,504) [INFO] Adding listener for song [], property: metronome
+(2026-05-03 21:40:20,504) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:40:20,801) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:40:20,802) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:40:21,102) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:40:21,201) [INFO] Setting property for song: metronome (new value True)
+(2026-05-03 21:40:21,202) [INFO] Property metronome changed of song []: (True,)
+(2026-05-03 21:40:21,501) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:40:21,502) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:40:21,602) [INFO] Setting property for song: tempo (new value 120)
+(2026-05-03 21:40:21,602) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:40:21,801) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:40:21,802) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:40:21,802) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:40:21,802) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:40:21,803) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:40:21,902) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:21,903) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:21,904) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:22,102) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,102) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,102) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,103) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,103) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,103) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,103) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,103) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,202) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:40:22,202) [INFO] Setting property for track: mute (new value 1)
+(2026-05-03 21:40:22,203) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:40:22,402) [INFO] Getting property for song: tempo = 130.0
+(2026-05-03 21:40:22,402) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:40:22,402) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:40:22,403) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:40:22,403) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:40:22,501) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:40:22,502) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:22,502) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:22,502) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:22,503) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:22,503) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:22,503) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:22,503) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:22,503) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:22,701) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,702) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,702) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,702) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,702) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,703) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,703) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,703) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:22,802) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:40:22,802) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:40:22,803) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:40:22,803) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:40:22,803) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:40:22,902) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:40:22,902) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:40:22,903) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:40:22,904) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:22,904) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:22,904) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:22,904) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:22,904) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:40:22,905) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:22,906) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:22,906) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:22,906) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:22,906) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:23,002) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,002) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,002) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,002) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,003) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,003) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,003) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,003) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:23,302) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:40:23,302) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:40:23,303) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:40:23,303) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:40:23,303) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:40:23,402) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:40:23,402) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,403) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,404) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,602) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,602) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,602) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,603) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,603) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,603) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,603) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,603) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:23,702) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:40:23,702) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:40:23,702) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:40:23,703) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:40:23,703) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:40:23,802) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:40:23,802) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,802) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,802) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,802) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:40:23,803) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,803) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,803) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:23,803) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:40:24,002) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,002) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,002) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,003) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,003) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,003) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,003) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,003) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:40:24,102) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:40:24,102) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:40:24,103) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:40:24,103) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:40:24,202) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:40:24,202) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:40:24,202) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:24,203) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:24,203) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:24,203) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:24,204) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:24,204) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:40:24,204) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:40:24,204) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:24,204) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:24,205) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:24,205) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:24,205) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:24,205) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:40:24,205) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:40:24,206) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:24,206) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:24,206) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:24,206) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:24,207) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:24,207) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:40:24,207) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:40:24,207) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:40:24,207) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:40:24,208) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:40:24,208) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:40:24,208) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:40:24,302) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,302) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,302) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,302) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,303) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,303) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,303) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,303) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:40:24,602) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:40:24,801) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:40:25,002) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 21:40:25,501) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:40:25,702) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 21:40:26,202) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:40:26,402) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 21:46:03,606) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:46:04,106) [INFO] Getting property for track: name = 1-MIDI
+(2026-05-03 21:46:04,106) [INFO] Getting property for track: mute = False
+(2026-05-03 21:46:04,205) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:46:04,206) [INFO] Getting property for track: has_audio_output = False
+(2026-05-03 21:46:04,206) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:46:04,206) [INFO] Getting property for track: has_midi_output = True
+(2026-05-03 21:46:04,406) [INFO] Getting property for track: has_midi_input = True
+(2026-05-03 21:46:04,406) [INFO] Getting property for track: has_audio_input = False
+(2026-05-03 21:46:04,506) [INFO] Getting property for clip_slot: has_clip = False
+(2026-05-03 21:46:04,606) [INFO] Calling method for clip_slot: create_clip (params (4,))
+(2026-05-03 21:46:05,606) [INFO] Calling method for clip_slot: delete_clip (params ())
+(2026-05-03 21:46:05,805) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:46:05,905) [INFO] Removing listener for song [], property tempo
+(2026-05-03 21:46:05,906) [INFO] Adding listener for song [], property: tempo
+(2026-05-03 21:46:05,906) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:46:05,906) [INFO] Removing listener for song [], property is_playing
+(2026-05-03 21:46:05,906) [INFO] Adding listener for song [], property: is_playing
+(2026-05-03 21:46:05,906) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-03 21:46:05,906) [INFO] Removing listener for song [], property current_song_time
+(2026-05-03 21:46:05,907) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-03 21:46:05,907) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-03 21:46:05,907) [INFO] Removing listener for song [], property signature_numerator
+(2026-05-03 21:46:05,907) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-03 21:46:05,907) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-03 21:46:05,907) [INFO] Removing beat listener
+(2026-05-03 21:46:05,907) [INFO] Adding beat listener
+(2026-05-03 21:46:05,907) [INFO] Removing listener for song [], property metronome
+(2026-05-03 21:46:05,907) [INFO] Adding listener for song [], property: metronome
+(2026-05-03 21:46:05,907) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:46:06,205) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:46:06,206) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:46:06,505) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:46:06,606) [INFO] Setting property for song: metronome (new value True)
+(2026-05-03 21:46:06,606) [INFO] Property metronome changed of song []: (True,)
+(2026-05-03 21:46:06,905) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:46:06,906) [INFO] Property metronome changed of song []: (False,)
+(2026-05-03 21:46:07,006) [INFO] Setting property for song: tempo (new value 120)
+(2026-05-03 21:46:07,007) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:46:07,206) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:46:07,206) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:46:07,207) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:46:07,207) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:46:07,207) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:46:07,305) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:46:07,306) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,306) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,306) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,307) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,307) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,307) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,307) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,307) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,506) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,506) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,507) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,507) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,508) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,508) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,508) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,508) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:07,606) [INFO] Setting property for song: tempo (new value 130)
+(2026-05-03 21:46:07,606) [INFO] Setting property for track: mute (new value 1)
+(2026-05-03 21:46:07,607) [INFO] Property tempo changed of song []: (130.0,)
+(2026-05-03 21:46:07,805) [INFO] Getting property for song: tempo = 130.0
+(2026-05-03 21:46:07,806) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:46:07,806) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:46:07,806) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:46:07,806) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:46:07,906) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:46:07,906) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,907) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,907) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,907) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:07,908) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,908) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,908) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:07,908) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:08,106) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,107) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,108) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,108) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,109) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,109) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,109) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,109) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:08,205) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:46:08,206) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:46:08,206) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:46:08,207) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:46:08,207) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-03 21:46:08,306) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:46:08,306) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:46:08,307) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:08,307) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:08,307) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:08,307) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:08,308) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:08,309) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:08,310) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:08,310) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:08,406) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,406) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,407) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,407) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,407) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,407) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,407) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,408) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:08,706) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:46:08,706) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:46:08,707) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:46:08,707) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:46:08,707) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:46:08,806) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:46:08,807) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:08,807) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:08,807) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:08,807) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:08,808) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:08,808) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:08,808) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:08,808) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:09,006) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,006) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,007) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,007) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,008) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,008) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,008) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,009) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,106) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 21:46:09,106) [INFO] Getting property for song: signature_numerator = 4
+(2026-05-03 21:46:09,106) [INFO] Getting property for song: signature_denominator = 4
+(2026-05-03 21:46:09,107) [INFO] Getting property for song: metronome = False
+(2026-05-03 21:46:09,107) [INFO] Getting property for song: is_playing = False
+(2026-05-03 21:46:09,206) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.mute', 'track.solo', 'track.arm', 'track.is_grouped', 'track.is_foldable'] (tracks 0..4)
+(2026-05-03 21:46:09,207) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:09,207) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:09,207) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:09,207) [INFO] Getting property for track: volume = 0.8500000238418579
+(2026-05-03 21:46:09,208) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:09,208) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:09,208) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:09,208) [INFO] Getting property for track: panning = 0.0
+(2026-05-03 21:46:09,426) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,427) [INFO] Getting property for scene: color_index = None
+(2026-05-03 21:46:09,526) [INFO] Setting property for song: tempo (new value 120.0)
+(2026-05-03 21:46:09,527) [INFO] Setting property for song: signature_numerator (new value 4)
+(2026-05-03 21:46:09,527) [INFO] Setting property for song: signature_denominator (new value 4)
+(2026-05-03 21:46:09,528) [INFO] Setting property for song: metronome (new value False)
+(2026-05-03 21:46:09,626) [INFO] Setting property for track: name (new value 1-MIDI)
+(2026-05-03 21:46:09,626) [INFO] Setting property for track: color_index (new value 17)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: name (new value 2-MIDI)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: color_index (new value 6)
+(2026-05-03 21:46:09,627) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: name (new value 3-Audio)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: color_index (new value 20)
+(2026-05-03 21:46:09,628) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: name (new value 4-Audio)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: color_index (new value 23)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: mute (new value False)
+(2026-05-03 21:46:09,629) [INFO] Setting property for track: solo (new value False)
+(2026-05-03 21:46:09,630) [INFO] Setting property for track: arm (new value False)
+(2026-05-03 21:46:09,630) [INFO] Setting property for track: volume (new value 0.8500000238418579)
+(2026-05-03 21:46:09,630) [INFO] Setting property for track: panning (new value 0.0)
+(2026-05-03 21:46:09,726) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,727) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,727) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,727) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,727) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,727) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,728) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:09,728) [INFO] Setting property for scene: name (new value )
+(2026-05-03 21:46:10,036) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:46:10,236) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:46:10,436) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 21:46:10,946) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:46:11,156) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 21:46:11,556) [INFO] Getting track data: ['track.name', 'track.color_index', 'track.is_grouped', 'track.is_foldable', 'track.has_midi_input', 'track.has_audio_input'] (tracks 0..4)
+(2026-05-03 21:46:11,756) [ERROR] AbletonOSC: Unknown OSC address: /live/browser/load_sample_by_path/_probe
+(2026-05-03 22:23:07,749) [INFO] Disconnecting...
+(2026-05-03 22:25:44,075) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 22:26:21,055) [INFO] Disconnecting...
+(2026-05-03 22:26:31,094) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 22:26:43,458) [INFO] Getting property for song: tempo = 120.0
+(2026-05-03 22:27:23,219) [INFO] Calling method for song: create_audio_track (params [-1])
+(2026-05-03 22:27:23,719) [INFO] Getting property for track: name = 2-Audio
+(2026-05-03 22:27:25,820) [INFO] Getting property for clip_slot: has_clip = True
+(2026-05-03 22:27:25,919) [INFO] Calling method for song: delete_track (params [1])
+(2026-05-03 22:29:30,903) [INFO] Disconnecting...
+(2026-05-03 22:30:05,103) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-03 22:35:52,468) [INFO] Disconnecting...
