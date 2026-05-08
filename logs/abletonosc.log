@@ -1358,3 +1358,40 @@ AttributeError: 'Track' object has no attribute 'volume'
 (2026-05-03 22:29:30,903) [INFO] Disconnecting...
 (2026-05-03 22:30:05,103) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
 (2026-05-03 22:35:52,468) [INFO] Disconnecting...
+(2026-05-04 12:47:00,321) [INFO] Started AbletonOSC on address ('0.0.0.0', 11000)
+(2026-05-04 12:49:01,845) [INFO] Adding listener for song [], property: tempo
+(2026-05-04 12:49:01,847) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-04 12:49:01,847) [INFO] Adding listener for song [], property: is_playing
+(2026-05-04 12:49:01,847) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-04 12:49:01,848) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-04 12:49:01,848) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-04 12:49:01,848) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-04 12:49:01,848) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-04 12:49:01,849) [INFO] Adding beat listener
+(2026-05-04 12:49:01,849) [INFO] Adding listener for song [], property: metronome
+(2026-05-04 12:49:01,849) [INFO] Property metronome changed of song []: (False,)
+(2026-05-04 12:49:11,105) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 12:49:56,525) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 12:59:59,717) [INFO] Removing listener for song [], property tempo
+(2026-05-04 12:59:59,718) [INFO] Adding listener for song [], property: tempo
+(2026-05-04 12:59:59,719) [INFO] Property tempo changed of song []: (120.0,)
+(2026-05-04 12:59:59,719) [INFO] Removing listener for song [], property is_playing
+(2026-05-04 12:59:59,720) [INFO] Adding listener for song [], property: is_playing
+(2026-05-04 12:59:59,720) [INFO] Property is_playing changed of song []: (False,)
+(2026-05-04 12:59:59,720) [INFO] Removing listener for song [], property current_song_time
+(2026-05-04 12:59:59,720) [INFO] Adding listener for song [], property: current_song_time
+(2026-05-04 12:59:59,720) [INFO] Property current_song_time changed of song []: (0.0,)
+(2026-05-04 12:59:59,720) [INFO] Removing listener for song [], property signature_numerator
+(2026-05-04 12:59:59,721) [INFO] Adding listener for song [], property: signature_numerator
+(2026-05-04 12:59:59,721) [INFO] Property signature_numerator changed of song []: (4,)
+(2026-05-04 12:59:59,721) [INFO] Removing beat listener
+(2026-05-04 12:59:59,721) [INFO] Adding beat listener
+(2026-05-04 12:59:59,721) [INFO] Removing listener for song [], property metronome
+(2026-05-04 12:59:59,721) [INFO] Adding listener for song [], property: metronome
+(2026-05-04 12:59:59,721) [INFO] Property metronome changed of song []: (False,)
+(2026-05-04 13:06:23,892) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 13:07:48,092) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 13:07:48,094) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 13:07:48,094) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 13:10:07,973) [INFO] Getting property for song: tempo = 120.0
+(2026-05-04 13:11:57,434) [INFO] Disconnecting...
